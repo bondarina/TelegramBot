@@ -60,14 +60,12 @@ public class TelegramBot extends TelegramLongPollingBot {
                                     "...☆.´..☆\n" +
                                     ".........´.¸.☆´ ☆\n" +
                                     "...........☆.´..☆´\n" +
-                                    ".............(.☆❤ )\n" +
+                                    ".............(.☆ )\n" +
                                     ".................))     \n" +
                                     "...............██Ɔ" +
-                                    "\n\nС днём рождения!" +
-                            "\n\nПредставь, что у тебя есть - телепорт! В какой город"
-                    +" ты бы хотел отправиться?"
-                    + "\n(но прежде нужно кое-что проверить: "
-                    +"напиши этот город)");
+                                    "\n\nПривет!"
+                    + "\nДавай проверим встроенный API: "
+                    +"напиши любой город)");
 
                     break;
                 case "Не знаю":
@@ -86,8 +84,7 @@ public class TelegramBot extends TelegramLongPollingBot {
     }
 
     public void startCommandReceived(Message message, long chatId, String name) {
-        String answer = name + ", как настроение?\n\nДобавим немного магии в этот день?"
-                + "\n(ответы на выбор ниже)";
+        String answer = name + ", как настроение?\n\n";
 
         sendMsg(message, chatId, answer);
     }
