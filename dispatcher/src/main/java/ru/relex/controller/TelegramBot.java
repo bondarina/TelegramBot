@@ -65,7 +65,7 @@ public class TelegramBot extends TelegramLongPollingBot {
                                     "...............██Ɔ" +
                                     "\n\nОтлично!"
                     + "\nДавай проверим встроенный API: "
-                    +"напиши любой город)");
+                    +"напиши любой город");
 
                     break;
                 case "Не знаю":
