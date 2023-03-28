@@ -84,7 +84,7 @@ public class TelegramBot extends TelegramLongPollingBot {
     }
 
     public void startCommandReceived(Message message, long chatId, String name) {
-        String answer = name + ", как настроение? Солнечное? (нажми внизу кнопку Да/Нет)\n\n";
+        String answer = name + ", как настроение? Солнечное? (нажми внизу кнопку Да/Не знаю)\n\n";
 
         sendMsg(message, chatId, answer);
     }
